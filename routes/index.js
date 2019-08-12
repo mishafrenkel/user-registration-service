@@ -8,7 +8,7 @@ const { matchedData, sanitize } = require('express-validator/filter');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Hack Reactor (HRX) Registraion' });
+  res.render('index', { title: 'Hack Reactor (HRX) Registration' });
 })
 
 /* POST user registration page. */
