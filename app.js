@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.DATABASE)
-  .then(() => console.log('connecting to Mongo Atlas Cluster'))
+  .then(() => console.log('Connected to Mongo Atlas Cluster'))
   .catch(e => console.error(e));
 
 mongoose.connection.on('error', (err) => {
